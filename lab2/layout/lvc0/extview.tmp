@@ -1,0 +1,87 @@
+*
+*
+*
+*                       LINUX           Thu Aug 20 14:58:18 2026
+*
+*
+*
+*  PROGRAM  advgen
+*
+*  Name           : advgen - Quantus - (64-bit)
+*  Version        : 21.2.2-p045
+*  Build Date     : Fri Sep 23 10:27:37 PDT 2022
+*
+*  HSPICE LIBRARY
+*
+*!LENGTH_UNITS METERS
+*
+*
+*
+
+*
+.SUBCKT inv vdd gnd ip_u24ev052 op_u24ev052
+*
+*
+*  caps2d version: 9
+*
+*
+*       TRANSISTOR CARDS
+*
+*
+MavD21_1	op_u24ev052#2	ip_u24ev052#4	gnd#2	gnd#3
++ nmos#20ivpcell#20gpdk180	L=1.8e-07	W=4e-07
++ AD=4.4e-13	AS=4.4e-13	PD=2.8e-06	PS=2.8e-06	simW=4e-07 fw=4e-07
+MavD27_1	op_u24ev052#3	ip_u24ev052#1	vdd#2	vdd
++ pmos#20ivpcell#20gpdk180	L=1.8e-07	W=4e-07
++ AD=4.4e-13	AS=4.4e-13	PD=2.8e-06	PS=2.8e-06	simW=4e-07 fw=4e-07
+*
+*
+*       RESISTOR AND CAP/DIODE CARDS
+*
+Rf1	ip_u24ev052	ip_u24ev052#3	5.259000	$mt1	$W=3e-07
++ $X=0.63 $Y=4.23
+Rf2	op_u24ev052	op_u24ev052#1	0.410926	$mt1	$W=3e-07
++ $X=4.4825 $Y=4.23
+Rf3	op_u24ev052#1	op_u24ev052#2	7.323749	$mt1	$W=4e-07
++ $X=3.43 $Y=3.325
+Rf4	op_u24ev052#1	op_u24ev052#3	7.245874	$mt1	$W=4e-07
++ $X=3.43 $Y=4.9125
+Rf5	vdd	vdd#1	0.393541	$mt1	$W=3e-07
++ $X=2.25 $Y=7.7115
+Rf6	vdd#1	vdd#2	7.194196	$mt1	$W=4e-07
++ $X=2.25 $Y=6.2075
+Rf7	vdd#1	vdd#3	2.407947	$mt1	$W=4e-07
++ $X=2.545 $Y=6.77
+Rf8	gnd	gnd#1	0.315666	$mt1	$W=3e-07
++ $X=2.25 $Y=0.526
+Rf9	gnd#1	gnd#2	7.194196	$mt1	$W=4e-07
++ $X=2.25 $Y=1.8075
+Rf10	gnd#1	gnd#3	2.407947	$mt1	$W=4e-07
++ $X=2.545 $Y=1.245
+Rg1	ip_u24ev052#1	ip_u24ev052#2	50.337921	$poly	$W=1.8e-07
++ $X=2.84 $Y=4.883
+Rg2	ip_u24ev052#2	ip_u24ev052#3	52.996323	$poly	$W=1.8e-07
++ $X=2.18 $Y=4.23
+Rg3	ip_u24ev052#2	ip_u24ev052#4	68.879585	$poly	$W=1.8e-07
++ $X=2.84 $Y=3.355
+*
+*       CAPACITOR CARDS
+*
+*
+C1	vdd	gnd	5.8266e-16	$X=2.2495 $Y=4.0755
+C2	ip_u24ev052	gnd	8.62104e-17	$X=0.5035 $Y=3.84
+C3	op_u24ev052	gnd	1.22427e-16	$X=4.5795 $Y=3.6435
+C4	ip_u24ev052#1	gnd	1.20815e-16	$X=2.771 $Y=4.906
+C5	ip_u24ev052#4	gnd	1.44848e-16	$X=2.7605 $Y=2.295
+C6	ip_u24ev052#3	gnd	2.25385e-16	$X=1.597 $Y=3.014
+C7	vdd#3	gnd	3.46132e-17	$X=2.632 $Y=3.7505
+C8	op_u24ev052#2	gnd	1.37611e-16	$X=3.0255 $Y=1.7725
+C9	op_u24ev052#3	gnd	1.12779e-16	$X=3.053 $Y=3.8365
+C10	vdd#2	gnd	8.24154e-17	$X=2.2495 $Y=4.091
+C11	op_u24ev052#1	gnd	2.56062e-16	$X=3.0295 $Y=2.811
+C12	vdd#1	gnd	8.78091e-17	$X=2.2495 $Y=5.1575
+C13	ip_u24ev052#2	gnd	1.84798e-16	$X=2.734 $Y=3.43
+*
+*
+.ENDS inv
+*

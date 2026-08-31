@@ -1,0 +1,12 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'nand2 layout lab3_nand2_static':
+  info: Assign pin label "in_b" at (0.1500, 3.2600) to layer `M1term'.
+  info: Assign pin label "gnd" at (5.0425, 0.1500) to layer `M1term'.
+  info: Assign pin label "in_a" at (0.1500, 9.7850) to layer `M1term'.
+  info: Assign pin label "op_u24ev052" at (9.9350, 6.5250) to layer `M1term'.
+  info: Assign pin label "vdd" at (5.0425, 13.6300) to layer `M1term'.
+
+***** End of Label Report *****
+

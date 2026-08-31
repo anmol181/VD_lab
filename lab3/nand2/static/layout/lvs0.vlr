@@ -1,0 +1,17 @@
+
+
+;----------------------------------------------------------------------------
+; vldb RSF file
+; Created by the Assura UI
+;----------------------------------------------------------------------------
+
+; form additions
+avSimName = "auLvs"
+avDisableWildcardPG = nil
+avVerilogBusMapIEEE = t
+avLibName  = "lab3_nand2_static"
+avCellName = "nand2"
+avViewName = "schematic"
+avViewList = "auLvs schematic symbol"
+avStopList = "auLvs"
+avVldbFile = "/home/u24ev052/vd/lab3/nand2/static/layout/lvs0.sdb"

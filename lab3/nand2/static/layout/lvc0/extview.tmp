@@ -1,0 +1,145 @@
+*
+*
+*
+*                       LINUX           Tue Aug 25 19:56:39 2026
+*
+*
+*
+*  PROGRAM  advgen
+*
+*  Name           : advgen - Quantus - (64-bit)
+*  Version        : 21.2.2-p045
+*  Build Date     : Fri Sep 23 10:27:37 PDT 2022
+*
+*  HSPICE LIBRARY
+*
+*!LENGTH_UNITS METERS
+*
+*
+*
+
+*
+.SUBCKT nand2 vdd gnd in_a in_b op_u24ev052
+*
+*
+*  caps2d version: 9
+*
+*
+*       TRANSISTOR CARDS
+*
+*
+MavD21_1	avC6#2	in_b#4	gnd#7	gnd#8	nmos#20ivpcell#20gpdk180
++ L=1.8e-07	W=4e-07
++ AD=4.4e-13	AS=4.4e-13	PD=2.8e-06	PS=2.8e-06
++ simW=4e-07 fw=4e-07
+MavD21_2	op_u24ev052#1	in_a#4	avC6	gnd#5
++ nmos#20ivpcell#20gpdk180	L=1.8e-07	W=4e-07
++ AD=4.4e-13	AS=4.4e-13	PD=2.8e-06	PS=2.8e-06	simW=4e-07 fw=4e-07
+MavD27_1	op_u24ev052#5	in_b#1	vdd#8	vdd
++ pmos#20ivpcell#20gpdk180	L=1.8e-07	W=4e-07
++ AD=4.4e-13	AS=4.4e-13	PD=2.8e-06	PS=2.8e-06	simW=4e-07 fw=4e-07
+MavD27_2	vdd#6	in_a#1	op_u24ev052#3	vdd
++ pmos#20ivpcell#20gpdk180	L=1.8e-07	W=4e-07
++ AD=4.4e-13	AS=4.4e-13	PD=2.8e-06	PS=2.8e-06	simW=4e-07 fw=4e-07
+*
+*
+*       RESISTOR AND CAP/DIODE CARDS
+*
+Rf1	in_b	in_b#3	5.858111	$mt1	$W=3e-07
++ $X=1.575 $Y=3.815
+Rf2	in_a	in_a#3	6.432111	$mt1	$W=3e-07
++ $X=0.74 $Y=7.165
+Rf3	avC6	avC6#2	14.487394	$mt1	$W=4e-07
++ $X=5.093 $Y=3.96
+Rf4	op_u24ev052#1	op_u24ev052#2	7.401360	$mt1	$W=4e-07
++ $X=7.665 $Y=5.1845
+Rf5	op_u24ev052#2	op_u24ev052#4	0.619153	$mt1	$W=4e-07
++ $X=7.075 $Y=6.41
+Rf6	op_u24ev052#4	op_u24ev052#5	7.487375	$mt1	$W=4e-07
++ $X=5.0925 $Y=9
+Rf7	op_u24ev052#2	op_u24ev052	0.407824	$mt1	$W=3e-07
++ $X=9.8595 $Y=6.525
+Rf8	op_u24ev052#3	op_u24ev052#4	7.000000	$mt1	$W=4e-07
++ $X=6.485 $Y=8.96
+Rf9	vdd#1	vdd#2	0.560575	$mt1	$W=3e-07
++ $X=8.9755 $Y=13.63
+Rf10	vdd#2	vdd	0.607942	$mt1	$W=3e-07
++ $X=6.254 $Y=13.63
+Rf11	vdd	vdd#3	0.584608	$mt1	$W=3e-07
++ $X=3.8815 $Y=13.63
+Rf12	vdd#3	vdd#4	0.584025	$mt1	$W=3e-07
++ $X=1.16 $Y=13.63
+Rf13	vdd#2	vdd#5	0.591533	$mt1	$W=4e-07
++ $X=7.665 $Y=11.8825
+Rf14	vdd#5	vdd#6	7.194196	$mt1	$W=4e-07
++ $X=7.665 $Y=9.5225
+Rf15	vdd#3	vdd#7	0.584533	$mt1	$W=4e-07
++ $X=2.52 $Y=11.9025
+Rf16	vdd#7	vdd#8	7.194196	$mt1	$W=4e-07
++ $X=2.52 $Y=9.5625
+Rf17	vdd#5	vdd#9	2.407947	$mt1	$W=4e-07
++ $X=7.37 $Y=10.085
+Rf18	vdd#7	vdd#10	2.407947	$mt1	$W=4e-07
++ $X=2.815 $Y=10.125
+Rf19	gnd#1	gnd#2	0.686962	$mt1	$W=3e-07
++ $X=8.9755 $Y=0.15
+Rf20	gnd#2	gnd	0.458996	$mt1	$W=3e-07
++ $X=5.664 $Y=0.15
+Rf21	gnd	gnd#3	0.584608	$mt1	$W=3e-07
++ $X=3.8815 $Y=0.15
+Rf22	gnd#3	gnd#4	0.584025	$mt1	$W=3e-07	$X=1.16 $Y=0.15
+Rf23	gnd#2	gnd#5	2.445666	$mt1	$W=1.58e-06
++ $X=7.075 $Y=1.4675
+Rf24	gnd#3	gnd#6	0.440158	$mt1	$W=4e-07
++ $X=2.52 $Y=1.465
+Rf25	gnd#6	gnd#7	7.194196	$mt1	$W=4e-07
++ $X=2.52 $Y=3.3925
+Rf26	gnd#6	gnd#8	2.407947	$mt1	$W=4e-07
++ $X=2.815 $Y=2.83
+Rg1	in_b#1	in_b#2	129.087921	$poly	$W=1.8e-07
++ $X=3.11 $Y=7.293
+Rg2	in_b#2	in_b#3	53.204659	$poly	$W=1.8e-07
++ $X=2.4475 $Y=5.695
+Rg3	in_b#2	in_b#4	63.879585	$poly	$W=1.8e-07	$X=3.11 $Y=4.88
+Rg4	in_a#1	in_a#2	66.171249	$poly	$W=1.8e-07
++ $X=7.075 $Y=8.008
+Rg5	in_a#2	in_a#3	123.621323	$poly	$W=1.8e-07
++ $X=5.5675 $Y=7.165
+Rg6	in_a#2	in_a#4	124.921257	$poly	$W=1.8e-07
++ $X=7.075 $Y=5.6175
+*
+*       CAPACITOR CARDS
+*
+*
+C1	vdd	gnd	2.17345e-16	$X=4.899 $Y=5.932
+C2	in_a	gnd	3.39998e-16	$X=3.1695 $Y=3.035
+C3	in_b	gnd	2.61247e-16	$X=2.922 $Y=1.5665
+C4	op_u24ev052	gnd	1.58025e-16	$X=7.268 $Y=3.6045
+C5	avC6	gnd	1.85039e-16	$X=5.2415 $Y=1.4135
+C6	in_a#1	gnd	1.29699e-16	$X=6.317 $Y=5.911
+C7	in_b#1	gnd	1.76629e-16	$X=3.819 $Y=4.878
+C8	in_a#4	gnd	1.80333e-16	$X=6.1045 $Y=2.6875
+C9	in_b#4	gnd	9.66182e-17	$X=3.6495 $Y=2.8595
+C10	in_a#3	gnd	5.77496e-16	$X=4.467 $Y=1.868
+C11	in_b#3	gnd	4.17298e-16	$X=3.743 $Y=1.7985
+C12	vdd#9	gnd	4.48146e-17	$X=5.344 $Y=2.7575
+C13	op_u24ev052#1	gnd	1.87504e-16	$X=5.7735 $Y=1.557
+C14	vdd#10	gnd	4.4957e-17	$X=4.368 $Y=2.768
+C15	avC6#2	gnd	1.78999e-16	$X=4.5485 $Y=1.4125
+C16	vdd#6	gnd	9.75629e-17	$X=5.9805 $Y=3.8685
+C17	op_u24ev052#3	gnd	3.11229e-16	$X=5.1875 $Y=2.2005
+C18	op_u24ev052#5	gnd	1.86017e-16	$X=4.515 $Y=3.0855
+C19	vdd#8	gnd	9.87617e-17	$X=3.831 $Y=3.885
+C20	op_u24ev052#2	gnd	4.68517e-16	$X=5.308 $Y=1.606
+C21	vdd#4	gnd	1.4297e-16	$X=2.2325 $Y=8.3135
+C22	vdd#1	gnd	1.46284e-16	$X=7.705 $Y=8.459
+C23	vdd#2	gnd	3.70033e-16	$X=5.5495 $Y=3.5585
+C24	vdd#3	gnd	3.66899e-16	$X=4.164 $Y=3.575
+C25	vdd#5	gnd	1.58457e-16	$X=5.7925 $Y=3.872
+C26	vdd#7	gnd	1.62128e-16	$X=3.9735 $Y=3.902
+C27	in_b#2	gnd	2.56365e-16	$X=3.9425 $Y=3.1115
+C28	in_a#2	gnd	4.16857e-16	$X=5.7815 $Y=3.0705
+*
+*
+.ENDS nand2
+*

@@ -1,0 +1,10 @@
+lab =? x
+
+create:
+	mkdir lab$(lab)
+	mkdir lab$(lab)/schematic
+	mkdir lab$(lab)/layout
+	mkdir lab$(lab)/graph
+	mkdir lab$(lab)/image
+	mkdir lab$(lab)/library
+	mkdir lab$(lab)/workspace

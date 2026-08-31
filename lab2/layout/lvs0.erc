@@ -1,0 +1,11 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'inv layout lab2_static_inv':
+  info: Assign pin label "gnd" at (2.7425, 0.1500) to layer `M1term'.
+  info: Assign pin label "ip_u24ev052" at (0.1500, 4.2300) to layer `M1term'.
+  info: Assign pin label "op_u24ev052" at (5.3350, 4.2300) to layer `M1term'.
+  info: Assign pin label "vdd" at (2.7425, 8.3100) to layer `M1term'.
+
+***** End of Label Report *****
+
