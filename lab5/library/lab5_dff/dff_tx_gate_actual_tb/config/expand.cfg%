@@ -1,0 +1,20 @@
+//Revision 2
+//NOTE
+// Default template for spectre
+// Note:
+//      Please remember to replace Top Cell Library, Cell, and View
+//      fields with the actual names used by your design.
+//END_NOTE
+
+config dff_tx_gate_actual_tb;
+design lab5_dff.dff_tx_gate_actual_tb:schematic;
+liblist myLib;
+
+viewlist spectre, cmos_sch, \cmos.sch , schematic, veriloga, ahdl, pspice, dspf;
+stoplist spectre;
+
+
+cell lab5_dff.dff_tx_gate_actual binding :av_extracted;
+
+
+endconfig

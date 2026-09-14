@@ -1,0 +1,111 @@
+*
+*
+*
+*                       LINUX           Thu Sep  3 12:51:22 2026
+*
+*
+*
+*  PROGRAM  advgen
+*
+*  Name           : advgen - Quantus - (64-bit)
+*  Version        : 21.2.2-p045
+*  Build Date     : Fri Sep 23 10:27:37 PDT 2022
+*
+*  HSPICE LIBRARY
+*
+*!LENGTH_UNITS METERS
+*
+*
+*
+
+*
+.SUBCKT inv vdd gnd clk ip_u24ev052 op_u24ev052
+*
+*
+*  caps2d version: 9
+*
+*
+*       TRANSISTOR CARDS
+*
+*
+MavD21_1	avC6#2	clk#4	gnd#7	gnd#8	nmos#20ivpcell#20gpdk180
++ L=1.8e-07	W=4e-07
++ AD=4.4e-13	AS=4.4e-13	PD=2.8e-06	PS=2.8e-06
++ simW=4e-07 fw=4e-07
+MavD21_2	op_u24ev052#3	ip_u24ev052#1	avC6	gnd#5
++ nmos#20ivpcell#20gpdk180	L=1.8e-07	W=4e-07
++ AD=4.4e-13	AS=4.4e-13	PD=2.8e-06	PS=2.8e-06	simW=4e-07 fw=4e-07
+MavD27_1	op_u24ev052#2	clk#1	vdd#2	vdd
++ pmos#20ivpcell#20gpdk180	L=1.8e-07	W=4e-07
++ AD=4.4e-13	AS=4.4e-13	PD=2.8e-06	PS=2.8e-06	simW=4e-07 fw=4e-07
+*
+*
+*       RESISTOR AND CAP/DIODE CARDS
+*
+Rf1	clk	clk#3	6.300278	$mt1	$W=3e-07
++ $X=0.15 $Y=8.6175
+Rf2	ip_u24ev052	ip_u24ev052#2	6.377277	$mt1	$W=3e-07
++ $X=1.5175 $Y=5.475
+Rf3	avC6	avC6#2	14.406000	$mt1	$W=4e-07
++ $X=4.8405 $Y=3.7
+Rf4	op_u24ev052	op_u24ev052#1	0.583434	$mt1	$W=3e-07
++ $X=8.55 $Y=7.5
+Rf5	op_u24ev052#1	op_u24ev052#2	8.181737	$mt1	$W=4e-07
++ $X=5.53 $Y=7.505
+Rf6	op_u24ev052#1	op_u24ev052#3	7.635128	$mt1	$W=4e-07
++ $X=7.18 $Y=5.6025
+Rf7	gnd#1	gnd#2	0.749962	$mt1	$W=3e-07
++ $X=8.6255 $Y=0.15
+Rf8	gnd#2	gnd	0.370912	$mt1	$W=3e-07
++ $X=5.368 $Y=0.15
+Rf9	gnd	gnd#3	0.564192	$mt1	$W=3e-07
++ $X=3.8175 $Y=0.15
+Rf10	gnd#3	gnd#4	0.579358	$mt1	$W=3e-07	$X=1.15 $Y=0.15
+Rf11	gnd#2	gnd#5	2.434147	$mt1	$W=1.58e-06
++ $X=6.59 $Y=1.3375
+Rf12	gnd#3	gnd#6	0.395533	$mt1	$W=4e-07
++ $X=2.5 $Y=1.3375
+Rf13	gnd#6	gnd#7	7.194196	$mt1	$W=4e-07
++ $X=2.5 $Y=3.1375
+Rf14	gnd#6	gnd#8	2.407947	$mt1	$W=4e-07
++ $X=2.795 $Y=2.575
+Rf15	vdd	vdd#1	1.021866	$mt1	$W=3e-07
++ $X=2.7325 $Y=14.845
+Rf16	vdd#1	vdd#2	7.194196	$mt1	$W=4e-07
++ $X=2.5 $Y=11.7625
+Rf17	vdd#1	vdd#3	2.407947	$mt1	$W=4e-07
++ $X=2.795 $Y=12.325
+Rg1	clk#1	clk#2	166.587921	$poly	$W=1.8e-07
++ $X=3.09 $Y=9.043
+Rg2	clk#2	clk#3	47.787991	$poly	$W=1.8e-07
++ $X=2.4925 $Y=6.995
+Rg3	clk#2	clk#4	128.671249	$poly	$W=1.8e-07
++ $X=3.09 $Y=5.4025
+Rg4	ip_u24ev052#1	ip_u24ev052#2	141.713318	$poly	$W=1.8e-07
++ $X=6.403 $Y=5.485
+*
+*       CAPACITOR CARDS
+*
+*
+C1	vdd	gnd	6.84056e-16	$X=4.897 $Y=2.771
+C2	clk	gnd	2.63739e-16	$X=3.0005 $Y=3.68
+C3	ip_u24ev052	gnd	3.47612e-16	$X=3.155 $Y=1.5925
+C4	op_u24ev052	gnd	1.66186e-16	$X=7.086 $Y=4.1195
+C5	avC6	gnd	1.61253e-16	$X=4.967 $Y=1.289
+C6	clk#1	gnd	2.33701e-16	$X=3.852 $Y=5.185
+C7	ip_u24ev052#1	gnd	2.48297e-16	$X=5.612 $Y=2.3115
+C8	clk#4	gnd	1.82434e-16	$X=3.782 $Y=2.386
+C9	ip_u24ev052#2	gnd	6.11368e-16	$X=4.519 $Y=1.3245
+C10	clk#3	gnd	5.29944e-16	$X=3.806 $Y=1.7815
+C11	op_u24ev052#3	gnd	2.69224e-16	$X=5.281 $Y=1.208
+C12	vdd#3	gnd	4.54387e-17	$X=4.266 $Y=3.0275
+C13	avC6#2	gnd	1.77399e-16	$X=4.3765 $Y=1.2885
+C14	op_u24ev052#2	gnd	4.1797e-16	$X=4.4335 $Y=2.1535
+C15	vdd#2	gnd	1.01736e-16	$X=3.788 $Y=4.4305
+C16	op_u24ev052#1	gnd	6.53874e-16	$X=4.735 $Y=1.2685
+C17	vdd#1	gnd	5.04719e-16	$X=4.202 $Y=2.615
+C18	clk#2	gnd	4.14946e-16	$X=4.015 $Y=2.8645
+*
+*
+.ENDS inv
+*

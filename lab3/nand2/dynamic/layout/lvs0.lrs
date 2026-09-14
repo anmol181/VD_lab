@@ -1,0 +1,35 @@
+@(#)$CDS: nvn_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.25 11/04/2022 00:36 (sjfhw885) $
+sub-version 4.1_USR6_EHF13, integ signature 2022-11-04-0002
+run on vlsilab-client43.eced.svnit.ac.in at Tue Sep  8 22:21:59 2026
+
+Schematic                         | Layout                         | Status
+-------------------------------------------------------------------------------
+nand2 schematic lab3_nand2_dynamic| nand2 layout lab3_nand2_dynamic| matched
+
+Schematic and Layout Match
+
+Schematic:
+  Library:lab3_nand2_dynamic
+  Cell   :nand2
+  View   :schematic
+
+Layout:
+  Library:lab3_nand2_dynamic
+  Cell   :nand2
+  View   :layout
+
+
+
+Extraction  Information
+--------------------
+     0 cells have 0 mal-formed device problems
+     0 cells have 0 label short problems
+     0 cells have 0 label open problems
+
+Mismatch  Information
+--------------------
+     0 cells have 0 Net mismatches
+     0 cells have 0 Device mismatches
+     0 cells have 0 Pin mismatches
+     0 cells have 0 Parameter mismatches
+

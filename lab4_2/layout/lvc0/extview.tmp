@@ -1,0 +1,85 @@
+*
+*
+*
+*                       LINUX           Wed Sep  9 21:38:58 2026
+*
+*
+*
+*  PROGRAM  advgen
+*
+*  Name           : advgen - Quantus - (64-bit)
+*  Version        : 21.2.2-p045
+*  Build Date     : Fri Sep 23 10:27:37 PDT 2022
+*
+*  HSPICE LIBRARY
+*
+*!LENGTH_UNITS METERS
+*
+*
+*
+
+*
+.SUBCKT inv vdd gnd in in_bar
+*
+*
+*  caps2d version: 9
+*
+*
+*       TRANSISTOR CARDS
+*
+*
+MavD21_1	in_bar#2	in#4	gnd#3	gnd#1
++ nmos#20ivpcell#20gpdk180	L=1.8e-07	W=4e-07
++ AD=4.4e-13	AS=4.4e-13	PD=2.8e-06	PS=2.8e-06	simW=4e-07 fw=4e-07
+MavD27_1	in_bar#3	in#1	vdd#3	vdd
++ pmos#20ivpcell#20gpdk180	L=1.8e-07	W=4e-07
++ AD=4.4e-13	AS=4.4e-13	PD=2.8e-06	PS=2.8e-06	simW=4e-07 fw=4e-07
+*
+*
+*       RESISTOR AND CAP/DIODE CARDS
+*
+Rf1	in#3	in	5.250374	$mt1	$W=3e-07	$X=0.6055 $Y=4
+Rf2	in_bar	in_bar#1	0.332759	$mt1	$W=3e-07
++ $X=4.165 $Y=4
+Rf3	in_bar#1	in_bar#2	7.186374	$mt1	$W=4e-07
++ $X=3.28 $Y=3.4875
+Rf4	in_bar#1	in_bar#3	7.234499	$mt1	$W=4e-07
++ $X=3.28 $Y=4.65
+Rf5	vdd#1	vdd#2	2.407947	$mt1	$W=4e-07
++ $X=2.3955 $Y=6.475
+Rf6	vdd#2	vdd#3	7.194196	$mt1	$W=4e-07
++ $X=2.1 $Y=5.9125
+Rf7	vdd#2	vdd	0.298520	$mt1	$W=3e-07
++ $X=2.3995 $Y=7.85
+Rf8	gnd#1	gnd#2	2.407947	$mt1	$W=4e-07
++ $X=2.3955 $Y=1.8
+Rf9	gnd#2	gnd#3	7.194196	$mt1	$W=4e-07
++ $X=2.1 $Y=2.3625
+Rf10	gnd#2	gnd	0.346645	$mt1	$W=3e-07
++ $X=2.3995 $Y=0.15
+Rg1	in#1	in#2	51.796253	$poly	$W=1.8e-07
++ $X=2.69 $Y=4.5705
+Rg2	in#2	in#3	48.829655	$poly	$W=1.8e-07	$X=2.08 $Y=3.9
+Rg3	in#2	in#4	32.004585	$poly	$W=1.8e-07
++ $X=2.69 $Y=3.4675
+*
+*       CAPACITOR CARDS
+*
+*
+C1	vdd	gnd	5.3393e-16	$X=2.0995 $Y=4.092
+C2	in	gnd	9.32161e-17	$X=0.543 $Y=3.608
+C3	in_bar	gnd	1.06643e-16	$X=4.2665 $Y=3.545
+C4	in#1	gnd	1.22912e-16	$X=2.6195 $Y=4.645
+C5	in#4	gnd	9.63191e-17	$X=2.631 $Y=2.694
+C6	in#3	gnd	2.13851e-16	$X=1.5025 $Y=2.8655
+C7	vdd#1	gnd	3.51421e-17	$X=2.4805 $Y=3.6545
+C8	in_bar#2	gnd	9.45112e-17	$X=2.9225 $Y=2.232
+C9	in_bar#3	gnd	1.09205e-16	$X=2.9045 $Y=3.7005
+C10	vdd#3	gnd	8.40977e-17	$X=2.0995 $Y=3.924
+C11	in_bar#1	gnd	1.93362e-16	$X=2.9485 $Y=3.047
+C12	vdd#2	gnd	7.53409e-17	$X=2.0995 $Y=5.028
+C13	in#2	gnd	1.3448e-16	$X=2.6035 $Y=3.497
+*
+*
+.ENDS inv
+*

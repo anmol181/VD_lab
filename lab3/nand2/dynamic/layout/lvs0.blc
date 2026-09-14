@@ -1,0 +1,4 @@
+"pmos(MOS)" "pmos(MOS)"
+"nmos(MOS)" "nmos(MOS)"
+"nand2 layout lab3_nand2_dynamic" "nand2 schematic lab3_nand2_dynamic" "nmos(MOS)" "pmos(MOS)"
+Devices filtered from layout

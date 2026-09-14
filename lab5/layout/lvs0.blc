@@ -1,0 +1,4 @@
+"pmos(MOS)" "pmos(MOS)"
+"nmos(MOS)" "nmos(MOS)"
+"tspc_dff layout lab5_dff" "tspc_dff schematic lab5_dff" "nmos(MOS)" "pmos(MOS)"
+Devices filtered from layout

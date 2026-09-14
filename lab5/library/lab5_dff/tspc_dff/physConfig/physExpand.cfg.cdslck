@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      u24ev052
+HostName                       vlsilab-client57.eced.svnit.ac.in
+ProcessIdentifier              481895
+ProcessCreationTime_UTC        1789394387
+ProcessCreationTime_Readable   Mon Sep 14 19:29:47 2026 IST
+AppIdentifier                  /tools/cadence/IC618/tools.lnx86/dfII/bin/64bit/virtuoso
+OSType                         lnx86
+ReasonForPlacingEditLock       
+FilePathUsedToEditLock         /home/u24ev052/vd/lab5/library/lab5_dff/tspc_dff/physConfig/physExpand.cfg
+TimeEditLocked                 Tue Sep 15 01:11:09 2026 IST

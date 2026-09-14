@@ -1,0 +1,13 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'nand2 layout lab3_nand2_dynamic':
+  info: Assign pin label "b" at (0.1500, 2.5000) to layer `M1term'.
+  info: Assign pin label "clk" at (0.1500, 7.5000) to layer `M1term'.
+  info: Assign pin label "gnd" at (7.9750, 0.1500) to layer `M1term'.
+  info: Assign pin label "a" at (0.1500, 12.5050) to layer `M1term'.
+  info: Assign pin label "vdd" at (7.9750, 14.8550) to layer `M1term'.
+  info: Assign pin label "out" at (15.8000, 7.5050) to layer `M1term'.
+
+***** End of Label Report *****
+
