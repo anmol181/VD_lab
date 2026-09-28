@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Sep 28 17:59:26 2026
+# Process ID: 1020763
+# Current directory: /home/u24ev052/vd
+# Command line: vivado
+# Log file: /home/u24ev052/vd/vivado.log
+# Journal file: /home/u24ev052/vd/vivado.jou
+# Running On: vlsilab-client43.eced.svnit.ac.in, OS: Linux, CPU Frequency: 3200.000 MHz, CPU Physical cores: 6, Host memory: 7953 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/u24ev052/cao/cao/cao.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/u24ev052/cao/cao/cao.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.2/data/ip'.
+open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:21 . Memory (MB): peak = 8529.879 ; gain = 744.688 ; free physical = 469 ; free virtual = 11149
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 28 18:07:09 2026...
