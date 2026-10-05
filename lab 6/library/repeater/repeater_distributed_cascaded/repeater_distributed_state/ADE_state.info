@@ -1,0 +1,3 @@
+projectDir = '"~/simulation"
+designInfo = '("repeater" "repeater_distributed" "schematic" "spectre")
+descriptionText = "None"
