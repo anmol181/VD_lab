@@ -1,0 +1,3 @@
+projectDir = '"~/simulation"
+designInfo = '("logical_effort" "rand_ckt" "schematic" "spectre")
+descriptionText = "None"
