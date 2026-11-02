@@ -1,0 +1,3 @@
+projectDir = '"~/simulation"
+designInfo = '("decoder" "static_nand_3x8_tb" "schematic" "spectre")
+descriptionText = "None"
