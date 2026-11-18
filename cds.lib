@@ -1,0 +1,17 @@
+SOFTINCLUDE /tools/cadence/IC618/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+DEFINE basic /tools/cadence/IC618/tools.lnx86/dfII/etc/cdslib/basic
+DEFINE gpdk180 /tools/cadence/FOUNDRY/analog/180nm/libs.oa22/gpdk180
+DEFINE cell_inv "./cell_inv"
+DEFINE repeater "./lab 6/library/repeater"
+DEFINE logical_effort "./lab 8/library/logical_effort"
+DEFINE inv "./lab1/inv"
+DEFINE decoder "./lab10/library/decoder"
+DEFINE lab2_static_inv "./lab2/library/lab2_static_inv"
+DEFINE lab3_dyn_inv "./lab3/library/lab3_dyn_inv"
+DEFINE lab3_nand2_dynamic "./lab3/nand2/dynamic/library/lab3_nand2_dynamic"
+DEFINE lab3_nand2_static "./lab3/nand2/static/library/lab3_nand2_static"
+DEFINE domino "./lab4_2/library/domino"
+DEFINE nora "./lab4_2/library/nora"
+DEFINE lab5_dff "./lab5/library/lab5_dff"
+DEFINE sram_6t "./lab9/library/sram_6t"
+DEFINE stdcell_anmol /home/u24ev052/vd/standard_cell_lib/stdcell_anmol

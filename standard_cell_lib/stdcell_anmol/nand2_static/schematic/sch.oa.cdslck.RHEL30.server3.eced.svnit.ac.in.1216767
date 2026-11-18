@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      u24ev052
+HostName                       server3.eced.svnit.ac.in
+ProcessIdentifier              1216767
+ProcessCreationTime_UTC        1795039814
+ProcessCreationTime_Readable   Thu Nov 19 03:40:14 2026 IST
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/u24ev052/vd/standard_cell_lib/stdcell_anmol/nand2_static/schematic/sch.oa.cdslck
+TimeEditLocked                 Thu Nov 19 04:58:07 2026 IST
